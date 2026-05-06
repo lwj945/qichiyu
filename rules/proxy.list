@@ -8,7 +8,6 @@ DOMAIN-KEYWORD,1e100
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,hdhive.com
-DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,fansky.net
 DOMAIN-SUFFIX,fansky.com
 DOMAIN-SUFFIX,ymawv.la
