@@ -6,6 +6,14 @@ DOMAIN-SUFFIX,qichiyu.com
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 
+# 域名后缀匹配
+DOMAIN-SUFFIX,hdhive.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,fansky.net
+DOMAIN-SUFFIX,fansky.com
+DOMAIN-SUFFIX,ymawv.la
+
+
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
 DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
