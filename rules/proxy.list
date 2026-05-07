@@ -12,6 +12,31 @@ DOMAIN-SUFFIX,fansky.net
 DOMAIN-SUFFIX,fansky.com
 DOMAIN-SUFFIX,ymawv.la
 
+#TMDB
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+#ANI
+DOMAIN-SUFFIX,resources.ani.rip
+DOMAIN-SUFFIX,open.ani-download.workers.dev
+DOMAIN-SUFFIX,aniopen.an-i.workers.dev
+#蜜柑
+DOMAIN-KEYWORD,mikanani
+#PT
+DOMAIN-SUFFIX,dmhy.org
+DOMAIN-SUFFIX,fsm.name
+DOMAIN-SUFFIX,invites.fun
+#其他
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,nicebowl.fun
+DOMAIN-KEYWORD,pikpak
+DOMAIN-SUFFIX,23ts.org
+DOMAIN-KEYWORD,illusion
+DOMAIN-KEYWORD,gamestorrents
+DOMAIN-KEYWORD,sehuatang  #色花堂
+DOMAIN-KEYWORD,5dmcity
+DOMAIN-KEYWORD,bangumi
+DOMAIN-KEYWORD,karsonjo
+DOMAIN-SUFFIX,zzxuh.com
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
