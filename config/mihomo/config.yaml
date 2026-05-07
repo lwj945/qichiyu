@@ -107,7 +107,6 @@ proxy-groups:
   - {name: 🗺️ 代理, type: select, proxies: [🚀 默认代理, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
   - {name: 🗺️ EXhentai, type: select, proxies: [🔯 美国故转, 🚀 默认代理, ♻️ 美国自动, 🇺🇲 美国节点, 直连]}
   - {name: 🗺️ JP, type: select, proxies: [🔯 日本故转, 🚀 默认代理, ♻️ 日本自动, 🇯🇵 日本节点, ]}
-  - {name: 🍎 Apple, type: select, proxies: [直连, 🚀 默认代理, 🔯 香港故转, 🔯 日本故转, ♻️ 香港自动, ♻️ 日本自动]}
   - {name: ♻️ Speedtest, type: select, proxies: [直连, 🚀 默认代理, 🔯 香港故转, 🔯 日本故转, ♻️ 香港自动, ♻️ 日本自动]}
   - {name: 📹 YouTube, type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, ♻️ 美国自动, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
   - {name: 🍀 Google, type: select, proxies: [🚀 默认代理, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
@@ -145,8 +144,7 @@ rules:
   - RULE-SET,directlite,直连
   - RULE-SET,jplite,🗺️ JP
   - RULE-SET,eXhentai_domain,🗺️ EXhentai
-  - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,Speedtest_domain,♻️ Speedtest
+  - RULE-SET,speedtest_domain,♻️ Speedtest
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,private_domain,直连
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
@@ -182,8 +180,6 @@ rule-providers:
   eXhentai_domain: {<<: *domain, url: "https://raw.githubusercontent.com/lwj945/meta-rules-dat/meta/geo/geosite/ehentai.mrs"}
   jplite: { <<: *class, url: "https://raw.githubusercontent.com/lwj945/qichiyu/refs/heads/main/rules/jp.list"}
   javdb_domain: {<<: *domain, url: "https://raw.githubusercontent.com/lwj945/meta-rules-dat/meta/geo/geosite/javdb.mrs"}
-  apple_domain: {<<: *domain, url: "https://raw.githubusercontent.com/lwj945/meta-rules-dat/meta/geo/geosite/apple.mrs"}
-  Speedtest_domain: {<<: *domain, url: "https://raw.githubusercontent.com/lwj945/meta-rules-dat/meta/geo/geosite/speedtest.mrs"}
   fakeipfilter_domain: {<<: *domain, url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/fakeip-filter.mrs"}
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   ai: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
