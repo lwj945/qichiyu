@@ -5,13 +5,14 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "机场订阅填到这里，两端引号不要去掉，不要填写到下方链接里去！！"
+    url: "http://192.168.2.11:58081/hzcp2bx3ea3b87jMEhud/download/collection/%E8%81%9A%E5%90%88%E8%AE%A2%E9%98%85-copy5383?target=ClashMeta"
     type: http
     interval: 86400
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
+      path: ./sub_store.yaml
     proxy: 直连
   #Airport2:
     #url: "机场订阅填到这里，两端引号不要去掉，不要填写到下方链接里去！！"
@@ -119,7 +120,7 @@ proxy-groups:
   - {name: 🎥 NETFLIX, type: select, proxies: [🚀 默认代理, 🔯 狮城故转, 🔯 香港故转, 🔯 日本故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
   - {name: 💶 PayPal, type: select, proxies: [🚀 默认代理, 🔯 日本故转, 🔯 香港故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 直连]}
-  - {name: 🔯 JAVDB, type: select, include-all: true, filter: "((?!(日|JP|(?i)Japan)).)*$"}
+  - {name: 🔯 JAVDB, type: select, include-all: true, filter: "(?=.*(港|HK|(?i)Hong|美|US|(?i)States|America|新加坡|坡|狮城|SG|Singapore))^((?!(日|JP|(?i)Japan)).)*$"}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(台|日|韩|深|美)).)*$"}
